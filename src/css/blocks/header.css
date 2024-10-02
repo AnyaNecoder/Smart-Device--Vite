@@ -1,6 +1,6 @@
 .header {
     min-height: 100vh;
-    background: url('../../src/assets/images/hero-bg.jpg') center/cover no-repeat;       
+    background: url('../../../src/assets/images/hero-bg.jpg') center/cover no-repeat;       
 }
 
 .header-inner {        
