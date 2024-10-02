@@ -1,0 +1,13 @@
+@import './fonts.css';
+@import './normalize.css';
+@import './variables.css';
+@import './globals.css';
+@import './utils.css';
+
+
+
+@import './blocks/header.css';
+@import './blocks/advantages.css';
+@import './blocks/services.css';
+@import './blocks/feedback.css';
+@import './blocks/footer.css';

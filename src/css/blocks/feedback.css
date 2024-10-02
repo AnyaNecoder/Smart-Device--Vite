@@ -1,0 +1,193 @@
+.feedback {
+    /* min-height: 100vh; */
+    padding-block: 96px 113px;
+    background-color: var(--color-blue);
+    background-image: url(../../../src/assets/images/airplane-polygon.png), url(../../../src/assets/images/bg-polygon/feedback-polygon-top.svg), url(../../../src/assets/images/bg-polygon/feedback-polygon-right.svg);
+    background-position: 20% -150%, top 94px right 101px, top 285px right -10px;
+    background-repeat: no-repeat;    
+}
+
+.feedback__inner {
+    max-width: 570px;
+    margin-left: auto;
+}
+
+.feedback__title {
+    font-size: 36px;
+    color: var(--color-light);
+    margin-bottom: 15px;
+}
+
+.feedback__text {
+    color: var(--color-light);
+    margin-bottom: 49px;
+}
+
+.feedback__form {
+    position: relative;
+}
+
+.feedback__form-inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 31px;
+}
+
+.feedback__form-input {
+    min-height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);        
+    padding: 14px 16px;    
+    border: var(--color-light-gray);
+}
+
+.feedback__form-input:hover {           
+    background-color: rgba(255, 255, 255, 0.3);         
+}
+
+.feedback__form-input.wide {
+    grid-column: -1 / 1;
+}
+
+.feedback__form-text {
+    resize: none;
+    min-height: 154px;    
+}
+
+.feedback__user-name {
+    position: absolute;
+    top: 1rem;
+    left: 3%;
+    font-size: 16px;    
+    color: var(--color-light);    
+    transition-duration: 0.3s;
+}
+
+.feedback__user-number {
+    position: absolute;
+    top: 1rem;
+    left: 55.5%;
+    font-size: 16px;    
+    color: var(--color-light);    
+    transition-duration: 0.3s;
+}
+
+.feedback__text-message {
+    position: absolute;
+    top: 33%;
+    left: 3%;
+    font-size: 16px;    
+    color: var(--color-light);    
+    transition-duration: 0.3s;
+}
+
+.feedback__form-input:not(:placeholder-shown) + .feedback__user-name,
+.feedback__form-input:not(:placeholder-shown) + .feedback__user-number,
+.feedback__form-input:not(:placeholder-shown) + .feedback__text-message,
+.feedback__form-input:hover + .feedback__user-name,
+.feedback__form-input:hover + .feedback__user-number,
+.feedback__form-input:hover + .feedback__text-message {
+    color: var(--color-light);
+    scale: 0.7em;
+    translate: -0.5em -1.25em;
+    font-size: 14px;
+}
+
+textarea::placeholder {   
+    color: var(--color-light);
+}
+
+.feedback__form-btn {
+    margin-bottom: 0;
+}
+
+.feedback__form input[type="checkbox"] + label {    
+    color: var(--color-light);   
+    padding-left: 40px;
+    margin-top: 5px;          
+}
+
+.feedback__form input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    margin-right: 16px;
+}
+
+.feedback__form input[type="checkbox"]:checked + label::after {             
+    top: 4px;
+    left: 12px;      
+}
+
+
+
+
+
+@media (max-width: 1920px) {
+    .feedback {        
+        background-position: 10% -150%, top 94px right 101px, top 285px right -10px;           
+    }             
+}
+@media (max-width: 1760px) {
+    .feedback {        
+        background-position: 10% -150%, top 94px right 50px, top 285px right -10px;           
+    }             
+}
+
+@media (max-width: 1650px) {
+    .feedback {
+        background-image: url(../../../src/assets/images/airplane-polygon.png);        
+        background-position: top -150% left -5%;           
+    }             
+}
+
+@media (max-width: 1370px) {
+    .feedback {                
+        background-position: top -150% left -30%;           
+    }             
+}
+
+@media (max-width: 1180px) {
+    .feedback {                
+        background-image: none;
+        padding-block: 83px 130px;           
+    }
+    .feedback__inner {
+        max-width: 590px;
+        margin-inline: auto;
+    }
+    .feedback__title {
+        font-size: 32px;        
+        margin-bottom: 21px;
+    }
+    .feedback__form-btn {
+        display: block;
+    }             
+}
+
+@media (max-width: 560px) {
+    .feedback {       
+        padding-block: 33px 41px;           
+    }    
+    .feedback__form-inner {       
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .feedback__title {
+        font-size: 28px;        
+        margin-bottom: 15px;
+    }
+    .feedback__form-btn {
+        display: block;
+    }
+    .feedback__user-number {        
+        top: 6rem;
+        left: 3%;        
+    }    
+    .feedback__text-message {        
+        top: 11rem;
+        left: 3%;        
+    }             
+}
+
