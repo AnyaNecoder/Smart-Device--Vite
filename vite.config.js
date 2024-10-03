@@ -7,7 +7,7 @@ export default defineConfig({
       // Псевдонимы для директорий
       '@css': path.resolve(__dirname, './src/css'),
       '@js': path.resolve(__dirname, './src/js'),
-      '@assets': path.resolve(__dirname, '../../../src/assets'),
+      '@assets': path.resolve(__dirname, './src/assets'),
     }
   }
 });

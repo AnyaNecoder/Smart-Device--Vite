@@ -1,6 +1,6 @@
 .header {
     min-height: 100vh;
-    background: url('../../../src/assets/images/hero-bg.jpg') center/cover no-repeat;       
+    background: url('@assets/images/hero-bg.jpg') center/cover no-repeat;       
 }
 
 .header-inner {        
@@ -522,7 +522,7 @@ input[type="checkbox"]:checked + label::after {
 
 @media (max-width: 720px) {
     .header-inner {
-        background-image: url('../../../src/assets/images/boards-small.png'), url('../../../src/assets/images/bg-polygon/header-bg-720.svg');        
+        background-image: url('@assets/images/boards-small.png'), url('@assets/images/bg-polygon/header-bg-720.svg');        
         background-position: right, right;
         background-repeat: no-repeat;
         height: 40vh;
@@ -554,7 +554,7 @@ input[type="checkbox"]:checked + label::after {
         margin-right: 0;
     }
     .header-inner {
-        background-image: url('../../../src/assets/images/boards-small.png'), url('../../../src/assets/images/bg-polygon/header-bg-720.svg');        
+        background-image: url('@assets/images/boards-small.png'), url('@assets/images/bg-polygon/header-bg-720.svg');        
         background-position: right top 100px, right top 0;
         background-repeat: no-repeat;        
     }        
