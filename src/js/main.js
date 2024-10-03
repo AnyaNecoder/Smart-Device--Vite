@@ -49,3 +49,5 @@ document.querySelectorAll('.footer-nav__title').forEach(title => {
       title.classList.toggle('active');
     });
   });
+
+
